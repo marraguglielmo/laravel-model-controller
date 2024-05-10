@@ -1,9 +1,18 @@
 .row{
     display: flex;
     flex-flow: row wrap;
-
-    .gm_card{
-        border: 1px solid black;
-
+    .col{
+        padding: 25px 15px;
+        .gm_card{
+            background: darken(#212529, 10%);
+            color: whitesmoke;
+            border-radius: 10px;
+            overflow: hidden;
+            padding-bottom: 15px;
+            height: 100%;
+            .card-text{
+                padding: 15px 20px;
+            }
+        }
     }
 }

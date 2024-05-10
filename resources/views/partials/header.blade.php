@@ -12,6 +12,7 @@
               </li>
             </ul>
           </div>
+          <h1>Boolflix</h1>
         </div>
       </nav>
 

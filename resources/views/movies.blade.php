@@ -4,16 +4,17 @@
 
 <section>
     <div class="container">
-        <div class="row">
+        <div class="row row-cols-4">
+            @foreach ($movies as $movie)
             <div class="col">
-                @foreach ($movies as $movie)
-                    <div class="gm_card">
-                        <div class="card-img">
-                            <img src="{{$movie->cover_image}}" alt="">
-                        </div>
-                        <div class="card-title">
+                <div class="gm_card text-center">
+                    <div class="card-img">
+                        <img src="{{$movie->cover_image}}" alt="{{$movie->title}}">
+                    </div>
+                    <div class="card-text">
+                        <h3 class="card-title mb-2">
                             {{$movie->original_title}}
-                        </div>
+                        </h3>
                         <div class="card-date">
                             {{$movie->date}}
                         </div>
@@ -21,10 +22,9 @@
                             voto: {{$movie->vote}}
                         </div>
                     </div>
-                @endforeach
-
-
+                </div>
             </div>
+            @endforeach
         </div>
     </div>
 </section>
