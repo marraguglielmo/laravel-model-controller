@@ -9,7 +9,7 @@
                 @foreach ($movies as $movie)
                     <div class="gm_card">
                         <div class="card-img">
-                            <img src="{{$movie->}}" alt="">
+                            <img src="{{$movie->cover_image}}" alt="">
                         </div>
                         <div class="card-title">
                             {{$movie->original_title}}
