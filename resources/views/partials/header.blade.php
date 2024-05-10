@@ -2,6 +2,7 @@
 
     <nav class="navbar navbar-expand-lg bg-dark">
         <div class="container-fluid">
+            <h1 class="text-white text-center me-3">Boolflix</h1>
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item">
@@ -9,10 +10,9 @@
               </li>
               <li class="nav-item">
                 <a class="nav-link text-white" href="{{route('movies')}}">Movies</a>
-              </li>
+            </li>
             </ul>
-          </div>
-          <h1>Boolflix</h1>
+        </div>
         </div>
       </nav>
 

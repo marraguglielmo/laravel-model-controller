@@ -10,8 +10,13 @@
             overflow: hidden;
             padding-bottom: 15px;
             height: 100%;
+            cursor: pointer;
             .card-text{
                 padding: 15px 20px;
+            }
+            &:hover{
+                transition: box-shadow .4s;
+                box-shadow: 0px 20px 23px -8px rgb(30, 31, 32);
             }
         }
     }
