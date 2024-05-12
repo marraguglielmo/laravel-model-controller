@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Guest\PageController;
+use Illuminate\Routing\RouteAction;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,8 +15,6 @@ use App\Http\Controllers\Guest\PageController;
 |
 */
 
-Route::get('/',[PageController::class, 'index'])->name('home');
+Route::get('/', [PageController::class, 'index'])->name('home');
 Route::get('/lista-film', [PageController::class, 'movies'])->name('movies');
-
-
-
+Route::get('/top-film', [PageController::class, 'topFilm'])->name('topFilm');
