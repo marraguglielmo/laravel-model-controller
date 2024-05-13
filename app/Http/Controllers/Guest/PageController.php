@@ -21,7 +21,16 @@ class PageController extends Controller
 
     public function topFilm()
     {
-        $movies = Movie::where('vote', '>=', 9)->get();
+        $movies = Movie::where('vote', '>=', 9)
+            ->orderBy('title')
+            ->get();
         return view('topFilm', compact('movies'));
+    }
+
+    public function detailMovie($id)
+    {
+
+        $movie = Movie::find($id);
+        return view('detailMovie', compact('movie'));
     }
 }

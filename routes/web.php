@@ -18,3 +18,4 @@ use Illuminate\Routing\RouteAction;
 Route::get('/', [PageController::class, 'index'])->name('home');
 Route::get('/lista-film', [PageController::class, 'movies'])->name('movies');
 Route::get('/top-film', [PageController::class, 'topFilm'])->name('topFilm');
+Route::get('/dettaglio-film/{id}', [PageController::class, 'detailMovie'])->name('detailMovie');
